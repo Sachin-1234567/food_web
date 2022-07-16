@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #google_translate_element {
+            padding: 0;
+            position: absolute;
+            right: 42px;
+            top: 12px;
+        }
+
+        .goog-te-banner-frame.skiptranslate,
+        .goog-te-gadget-simple img,
+        img.goog-te-gadget-icon,
+        .goog-te-menu-value span {
+            display: none !important;
+        }
+
+        .goog-te-menu-frame {
+            box-shadow: none !important;
+        }
+
+        .goog-te-gadget-simple {
+            background-color: transparent !important;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20,5H10.88L10,2H4A2,2 0 0,0 2,4V17A2,2 0 0,0 4,19H11L12,22H20A2,2 0 0,0 22,20V7A2,2 0 0,0 20,5M7.17,14.59A4.09,4.09 0 0,1 3.08,10.5A4.09,4.09 0 0,1 7.17,6.41C8.21,6.41 9.16,6.78 9.91,7.5L10,7.54L8.75,8.72L8.69,8.67C8.4,8.4 7.91,8.08 7.17,8.08C5.86,8.08 4.79,9.17 4.79,10.5C4.79,11.83 5.86,12.92 7.17,12.92C8.54,12.92 9.13,12.05 9.29,11.46H7.08V9.91H11.03L11.04,10C11.08,10.19 11.09,10.38 11.09,10.59C11.09,12.94 9.5,14.59 7.17,14.59M13.2,12.88C13.53,13.5 13.94,14.06 14.39,14.58L13.85,15.11L13.2,12.88M13.97,12.12H13L12.67,11.08H16.66C16.66,11.08 16.32,12.39 15.1,13.82C14.58,13.2 14.21,12.59 13.97,12.12M21,20A1,1 0 0,1 20,21H13L15,19L14.19,16.23L15.11,15.31L17.79,18L18.5,17.27L15.81,14.59C16.71,13.56 17.41,12.34 17.73,11.08H19V10.04H15.36V9H14.32V10.04H12.36L11.18,6H20A1,1 0 0,1 21,7V20Z' fill='%23161617'/%3E%3C/svg%3E") center / 12px no-repeat;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            background-size: 20px 20px;
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.8;
+            padding: 0 6px;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border-left: none !important;
+            border-top: none !important;
+            border-bottom: none !important;
+            border-right: none !important;
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--header section starts-->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>resto.</a>
+        <nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#dishes">Dishes</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#review">Review</a>
+            <a href="#order">Order</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <!-- <a href="#" class="fas fa-language"></a> -->
+            <a href="#" id="google_translate_element"></a>
+
+
+        </div>
+    </header>
+    <!--header section ends-->
+    <!-- serch form -->
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here...." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+    <!-- home section start -->
+    <section class="home" id="home">
+
+        <div class="swiper mySwiper home-slider">
+
+            <div class="swiper-wrapper wrapper">
+
+                <div class="swiper-slide slide">
+
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>spicy noodles</h3>
+                        <p>This popularity is not for nothing. Spicy noodles are obviously a very versatile food,
+                            versatile enough to light up any basic meal. That last bit is exactly why we’re always
+                            coming up with new and diverse spicy ramen noodle recipes that we can eat every day. Here
+                            are our top five such recipes.</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-1.png" alt="">
+
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>fried chicken</h3>
+                        <p>The everyday classic McVeggie + a side of crispy, golden, world famous fries</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-2.png" alt="">
+
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>our special dish</span>
+                        <h3>hot pizza</h3>
+                        <p>Pizza (Italian: [ˈpittsa], Neapolitan: [ˈpittsə]) is a dish of Italian origin consisting of a
+                            usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and
+                            often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple,
+                            meat, etc.), which is then baked at a high temperature, traditionally in a wood-fired
+                            oven.[1] A small pizza is sometimes called a pizzetta. A person who makes pizza is known as
+                            a pizzaiolo.</p>
+                        <a href="#" class="btn">order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/home-img-3.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+    <!-- home section  end -->
+    <!-- dishesh  section starts-->
+    <section class="dishes" id="dishes">
+        <h3 class="sub-heading"> our dishes</h3>
+        <h1 class="heading"> popular dishes</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-1.png" alt="">
+                <h3>Chiken Burger</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <!-- <i class="fas fa-star"></i> -->
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Combine chicken ,bread crumbs,chopped  greened onions </p>
+                <span>Rs.99</span>
+                <a href="#" class="btn"> add to cart</a>
+
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-2.png" alt="">
+                <h3> Jelly Hearts</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>It is low in cal and high in protein and manu micronutrients</p>
+                <span>Rs.169</span>
+                <a href="#" class="btn"> add to cart</a>
+
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-3.png" alt="">
+                <h3>Chiken Tandoori</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>A dish of rosted chicke grnen,rously spiced giving meat</p>
+                <span> Rs.249</span>
+                <a href="#" class="btn"> add to cart</a>
+
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-4.png" alt="">
+                <h3>Nonveg Pizza</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>large chicken dominator + 2 Garlic bread + tomato shawas</p>
+                <span>Rs.239</span>
+                <a href="#" class="btn"> add to cart</a>
+
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-5.png" alt="">
+                <h3>Ice Cream</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Very nice ice-cream with chocklet cream and one copy </p>
+                <span>Rs.149</span>
+                <a href="#" class="btn"> add to cart</a>
+
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-6.png" alt="">
+                <h3>Fried Chiken</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <p>three leg piece with tomato shawas and one pepsi</p>
+                </div>
+                <span>Rs.199</span>
+                <a href="#" class="btn"> add to cart</a>
+
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-7.jpg" alt="">
+                <h3>Cheese Paratha</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Three chease paratha with amul butter and tomato shawas</p>
+                <span>Rs.139</span>
+                <a href="#" class="btn"> add to cart</a>
+
+            </div>
+            <div class="box">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+                <img src="images/dish-8.jpg" alt="">
+                <h3>Gulab Jamun</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p> sweet twenty picae of gulab jamun with suger syrup</p>
+                <span>Rs.129</span>
+                <a href="#" class="btn"> add to cart</a>
+
+            </div>
+        </div>
+    </section>
+    <!-- dishesh  section ends-->
+    <!-- about section starts -->
+    <section class="about" id="about">
+        <h3 class="sub-heading"> about us</h3>
+        <h1 class="heading"> why choose us? </h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/about-img.png" alt="">
+            </div>
+            <div class="content">
+                <h3>best food in the country</h3>
+                <p>Indian food is tasty, healthy, and always contains the nicest spices. While each dish varies by
+                    region, the typical Indian dish contains around seven different ingredients and an infinite array of
+                    fresh spices, each bringing their own unique flavor to the table.</p>
+
+                <div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>free delivery</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-rupee-sign"></i>
+                        <span>easy payment</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 service</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- menu section starts  -->
+
+    <section class="menu" id="menu">
+
+        <h3 class="sub-heading"> our menu </h3>
+        <h1 class="heading"> today's speciality </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-1.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Pizza</h3>
+                    <p>The bottom of the pizza, called the "crust", widely according to style – thin as in a typical.
+                    </p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs.249</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-2.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Burger</h3>
+                    <p>A burger, in itself is not junk food. It is considered junk food due to the company it keeps.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs.199</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-3.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Crepes</h3>
+                    <p>rench pancake a thin batter containing flour, eggs, melted butter, salt, milk, water.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs.69</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-4.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Ice Cream</h3>
+                    <p>Ice cream is a mixture of sugar, and sometimes other ingredients that has been frozen.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs.199</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-5.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Berry Pancakes</h3>
+                    <p>Take a breakfast or brunch tour of the tropics with this pancake recipe. The banana, pineapple
+                        and coconut.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs.249</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-6.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>vegetarian cupcake</h3>
+                    <p>Vegans can eat pancakes made without dairy and eggs. You might wonder if it's possible to make
+                        vegan pancakes.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs.399</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-7.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Juice</h3>
+                    <p>Cranberry. Tart and bright red, cranberry juice offers many benefits. Tomato juice is not only a
+                        key ingredient. </p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs.199</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-8.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>strawberry mango</h3>
+                    <p>Strawberry + Mango. Bright, colorful, and full of tropical vibes. These two fruits were meant to
+                        be together ..</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs.169</span>99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-9.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>Lemon Juice</h3>
+                    <p>Whether you enjoy the fruit alone or with your morning tea, here are just a few reasons to
+                        embrace lemons.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs.299</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-10.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>spicy chicken</h3>
+                    <p>The real key to crispy, oven-baked chicken wings is making sure the skin is totally dry, which
+                        requires.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs.269</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-11.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>veg thali</h3>
+                    <p>Here are some of the great Indian thalis that are nothing less than a grand feast.Each of them
+                        celebrate.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs.249</span>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/menu-12.jpg" alt="">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h3>paneer bhaji</h3>
+                    <p>Paneer is an Indian cheese made by curdling milk using heat and acid. It's made quickly,
+                        typically within.</p>
+                    <a href="#" class="btn">add to cart</a>
+                    <span class="price">Rs.299</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- menu section ends -->
+    <!-- review section starts -->
+    <section class="review" id="review">
+        <h3 class="sub-heading"> customre's review </h3>
+        <h1 class="heading"> what that say </h1>
+
+        <div class="review-slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-1.png" alt="">
+                        <div class="user-info">
+                            <h3>Sachin Rahane</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>I and my friend had dinner here one of the nights we were in Kalpetta. The ambiance was good and
+                        the food recommendations were great. We had a traditional Arabian rice and chicken preparation,
+                        Kuzhi Manthi.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-2.png" alt="">
+                        <div class="user-info">
+                            <h3>Shubhangi Panmand</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>The Food we had enjoyed at the time of dinner. It was really delicious taste with great quality,
+                        everything had unique taste which we had ordered, nice arrangement and services from the staff
+                        while eating to good.</p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-3.png" alt="">
+                        <div class="user-info">
+                            <h3>Pratik Narsale</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        The food was excellent and so was the service. I had the mushroom risotto with scallops which
+                        was awesome. My wife had a burger over greens (gluten-free) which was also very good. They were
+                        very conscientious about gluten."
+                    </p>
+                </div>
+                <div class="swiper-slide slide">
+                    <i class="fas fa-quote-right"></i>
+                    <div class="user">
+                        <img src="images/pic-4.png" alt="">
+                        <div class="user-info">
+                            <h3>Priynka Narsale</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        <!-- <br> 1)rigoal food -->
+                        <br>1)tasty food
+                        <br>2)very reasonable rates
+                        <br>3)good quantities
+                        <br>4)good service
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- review section ends -->
+    <!-- order section starts -->
+
+    <section class="order" id="order">
+        <h3 class="sub-heading"> order now </h3>
+        <h1 class="heading"> free and fast </h1>
+
+        <form action="">
+            <div class="inputBox">
+                <div class="input">
+                    <span>your name</span>
+                    <input type="text" placeholder="enter your name">
+                </div>
+                <div class="input">
+                    <span>your number</span>
+                    <input type="number" placeholder="enter your number">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>your Order</span>
+                    <input type="text" placeholder="enter food name">
+                </div>
+                <div class="input">
+                    <span>additional food</span>
+                    <input type="test" placeholder="extra with food">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>your much</span>
+                    <input type="number" placeholder="how many orders">
+                </div>
+                <div class="input">
+                    <span>date and time</span>
+                    <input type="datetime-local">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>your address</span>
+                    <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input">
+                    <span>your message</span>
+                    <textarea name="" placeholder="enter your messages" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="order now" class="btn">
+        </form>
+
+    </section>
+
+    <!-- order section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">india</a>
+                <a href="#">japan</a>
+                <a href="#">america</a>
+                <a href="#">russia</a>
+                <a href="#">france</a>
+                <a href="#">britam</a>
+            </div>
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#home">home</a>
+                <a href="#dishes">dishes</a>
+                <a href="#about">about</a>
+                <a href="#menu">menu</a>
+                <a href="#review">review</a>
+                <a href="#order">order</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+91 7057936172</a>
+                <a href="#">+91 9921643889</a>
+                <a href="#">+91 9921643814</a>
+                <a href="https://support.google.com/mail/answer/56256?hl=en" target="blank">rahanesachin28@gmail.com</a>
+                <a href="https://support.google.com/mail/answer/56256?hl=en"
+                    target="blank">rahanesachin28@gmail.com</a>
+                <a href="https://support.google.com/mail/answer/56256?hl=en" target="blank">santoshkhakale@gmail.com</a>
+                <a href="#">shirdi, india - 423605</a>
+            </div>
+            <div class="box1">
+                <h3>follow us</h3>
+                <a href="https://www.instagram.com/rahane_sachin__17/" target="blank"><i
+                        class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/rahane_sachin__17/" target="blank"><i
+                        class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/rahane_sachin__17/" target="blank"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="box1">
+
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30038.981625645607!2d74.45902322416731!3d19.76056229871337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdc5ba7461768af%3A0xd802d2c2943c99c!2sShirdi%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1646295213738!5m2!1sen!2sin"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="credit"> copyright @ 2022 by <span>mr. Sachin Rahane</span></div>
+
+    </section>
+    <!-- footer section ends -->
+
+    <!-- loder part -->
+    <div class="loader-container">
+        <img src="images/loader.gif" alt="">
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
