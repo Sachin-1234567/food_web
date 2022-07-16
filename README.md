@@ -2,7 +2,9 @@
 
 This project all about food web front end which i made using HTML,CSS,JS. for hosting i have use azure static web app. Azure static web apps is a service that automatically builds and deploys full stack web apps to azure from a code repository so i hosted using this service.
 
-#url of project:https://nice-mushroom-05fc61010.1.azurestaticapps.net
+# url of project: https://nice-mushroom-05fc61010.1.azurestaticapps.net
+
+# Demo Video Url:- https://youtu.be/X9QdHOKmGnU
 
 ![Screenshot (48)](https://user-images.githubusercontent.com/97430333/179364010-6c72f338-9ca6-4473-95a9-920677dba6f8.png)
 ![Screenshot (49)](https://user-images.githubusercontent.com/97430333/179364032-131592db-addd-4696-bffd-d6c70bc20ea3.png)
